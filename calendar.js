@@ -35,11 +35,6 @@ var Import = function (vcal) {
 			for(i = 0; i < cal.length; i++) {
 				node = cal[i].split(':');
 				nodeName = node[0].replace("value", "").replace(";", "").replace("=", "_").replace(/-/g, "_").toLowerCase();
-				depth = getDepth(inside);
-				for(d = 0; d < depth; d++) {
-					debugText += "&nbsp;&nbsp;&nbsp;&nbsp;";
-				}
-				debugText += nodeName + " = " + node[1] + "<br/>";
 				switch(nodeName) {
 				case "begin":
 					sectionName = node[1].toLowerCase();
