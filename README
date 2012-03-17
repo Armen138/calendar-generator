@@ -1,0 +1,6 @@
+Generates printable calendars
+Specify year, horizontal months per page and vertical months per page.
+Optionally, paste the contents of an "ical" file, such as the ones exported 
+by google calendar.
+
+Tested with ical data from google calendar, printed on "letter" format paper.
